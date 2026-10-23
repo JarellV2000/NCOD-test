@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NO CAP OR DRINK — Game</title>
+  <link rel="stylesheet" href="css/theme.css">
+  <script defer src="js/animations.js"></script>
+  <script defer src="js/game.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">NC</span><span>NO CAP <b>OR DRINK</b><small>STOP LYING OR GET FRIED</small></span></a>
+    <a class="subtle-link" href="theme.html">Theme & animation preview ↗</a>
+  </header>
+  <main class="shell">
+    <section class="hero panel reveal">
+      <p class="eyebrow">THE PARTY STARTS HERE</p>
+      <h1>NO CAP <span>OR DRINK.</span></h1>
+      <p class="lede">Pick a mode. Get a question. No cap.</p>
+      <div class="hero-flare" aria-hidden="true"></div>
+    </section>
+    <section class="section-head"><div><p class="eyebrow">CHOOSE YOUR GAME</p><h2>Pick your mode</h2></div><span class="pill">STARTER BUILD</span></section>
+    <section id="mode-grid" class="mode-grid" aria-label="Game modes">
+      <button class="mode-card reveal" data-mode="Friends"><span class="mode-icon">👥</span><span><strong>Friends</strong><small>Fun, real & freaky</small></span><i>↗</i></button>
+      <button class="mode-card reveal" data-mode="Talking Stage"><span class="mode-icon">💬</span><span><strong>Talking Stage</strong><small>Light, flirty & real</small></span><i>↗</i></button>
+      <button class="mode-card reveal" data-mode="Couples"><span class="mode-icon">❤️</span><span><strong>Couples</strong><small>Deep, flirty & real talk</small></span><i>↗</i></button>
+      <button class="mode-card reveal" data-mode="Confessional"><span class="mode-icon">🎤</span><span><strong>Confessional</strong><small>Anonymous voting</small></span><i>↗</i></button>
+      <button class="mode-card reveal" data-mode="Confessionals Pt 2"><span class="mode-icon">🕵️</span><span><strong>Confessionals Pt 2</strong><small>Submit, guess, reveal</small></span><i>↗</i></button>
+      <button class="mode-card reveal" data-mode="Who's Most Likely To"><span class="mode-icon">🏆</span><span><strong>Who's Most Likely To</strong><small>Vote with your crew</small></span><i>↗</i></button>
+      <button class="mode-card reveal" data-mode="Dare or Drink"><span class="mode-icon">🔥</span><span><strong>Dare or Drink</strong><small>Dare, sip, or pass</small></span><i>↗</i></button>
+    </section>
+    <section id="play-panel" class="play-panel panel" hidden aria-live="polite">
+      <button id="back-btn" class="text-button">← All modes</button>
+      <p class="eyebrow">SELECTED MODE</p><h2 id="active-mode">Friends</h2>
+      <p id="starter-question" class="question">Your full question deck will be connected when the existing game code is split into modules.</p>
+      <div class="button-row"><button id="next-btn" class="primary-button">Next demo prompt <span>→</span></button><button id="pass-btn" class="secondary-button">Pass</button></div>
+      <p class="note">Starter scaffold only — online lobbies and the existing question banks are not connected in this template yet.</p>
+    </section>
+    <footer><span>NO CAP OR DRINK</span><span>Play honest. Keep it fun. Passing is always okay.</span></footer>
+  </main>
+</body>
+</html>
