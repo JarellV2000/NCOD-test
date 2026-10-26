@@ -1,2 +1,22 @@
-// Add this mode’s approved prompts here.
-export const questions = [];
+export const questions = [
+  "Who has probably ignored a text while holding their phone?",
+  "Who has practiced an argument in the shower?",
+  "Who has pretended to be asleep to avoid a conversation?",
+  "Who has accidentally sent a message to the wrong person?",
+  "Who has checked a crush’s page more than once in a day?",
+  "Who has laughed at a joke they did not understand?",
+  "Who has stayed home and told everyone they were busy?",
+  "Who has bought something just to impress someone?",
+  "Who has changed outfits three times before going out?",
+  "Who has rehearsed a phone call before making it?",
+  "Who has muted the group chat?",
+  "Who has left an event without saying goodbye?",
+  "Who has pretended to remember someone’s name?",
+  "Who has eaten food they said they did not want?",
+  "Who has made up an excuse for being late?",
+  "Who has watched a whole season in one day?",
+  "Who has deleted a post because it got no reactions?",
+  "Who has sent a text and immediately regretted it?",
+  "Who has googled their own name?",
+  "Who has kept a ridiculous souvenir?"
+];

@@ -1,3 +1,3 @@
-import { questions } from './questions.js';
-import { mountQuestionPreview } from '../../js/core/question-controller.js';
-mountQuestionPreview({ root: document.querySelector('#mode-root'), title: 'Confessional', questions });
+import {mountVoting} from '../../js/core/voting.js';
+import {questions} from './questions.js';
+mountVoting(document.querySelector('#mode-root'),{slug:'confessional',questions,anonymous:true});

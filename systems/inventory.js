@@ -1,1 +1,1 @@
-// inventory system — placeholder, not yet implemented.
+export const starterInventory=['everyday'];

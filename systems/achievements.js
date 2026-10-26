@@ -1,1 +1,1 @@
-// achievements system — placeholder, not yet implemented.
+export const achievements=[{id:'first-party',name:'First Party',description:'Complete your first online game.'},{id:'truth-teller',name:'Truth Teller',description:'Play 25 online rounds.'}]; // Not awarded until server validation exists.

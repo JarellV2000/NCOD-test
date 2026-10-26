@@ -1,3 +1,3 @@
-import { questions } from './questions.js';
-import { mountQuestionPreview } from '../../js/core/question-controller.js';
-mountQuestionPreview({ root: document.querySelector('#mode-root'), title: 'Friends', questions });
+import {mountQuestions} from '../../js/core/question-controller.js';
+import {questions} from './questions.js';
+mountQuestions({root:document.querySelector('#mode-root'),slug:'friends',title:'Friends',questions});

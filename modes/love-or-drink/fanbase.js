@@ -1,1 +1,2 @@
-// Placeholder only: AI fanbase voting is not implemented.
+// Fanbase voting is intentionally inactive. Do not present random results as real AI votes.
+export const fanbaseEnabled=false;

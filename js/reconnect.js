@@ -1,1 +1,2 @@
-// reconnect system — placeholder, not yet implemented.
+// The server retains membership when a tab sleeps. Resume the same Auth identity.
+export function watchResume(refresh){let running=false,disposed=false;async function run(){if(running||disposed||document.hidden||!navigator.onLine)return;running=true;try{await refresh();}finally{running=false;}}const visible=()=>{if(!document.hidden)run();};document.addEventListener('visibilitychange',visible);addEventListener('online',run);addEventListener('pageshow',run);const timer=setInterval(run,5000);run();return()=>{disposed=true;clearInterval(timer);document.removeEventListener('visibilitychange',visible);removeEventListener('online',run);removeEventListener('pageshow',run);};}

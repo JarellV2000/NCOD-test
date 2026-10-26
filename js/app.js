@@ -1,3 +1,4 @@
-import { modes } from './mode-registry.js';
-const target = document.querySelector('#modes');
-for (const mode of modes) { const a=document.createElement('a');a.className='card';a.href=mode.path;a.textContent=mode.name+' →';target.append(a); }
+import {modes} from './mode-registry.js';import {el,scene} from './ui.js';import {equippedCharacter} from './profiles.js';
+document.querySelector('#home-scene').append(scene('Your Starter High Rise',equippedCharacter().color));
+const details={friends:['👥','Stories, laughs & the group chat exposed.','Play now · shared phone'],'talking-stage':['💬','Break the ice. Find the chemistry.','Play now · shared phone'],couples:['❤️','More connection. A little honest conversation.','Play now · shared phone'],confessional:['🎤','Anonymous picks. A 20-second countdown.','Local voting prototype'],'confessionals-pt2':['🤫','Your stories. Their guesses. The big reveal.','Shared-phone prototype'],'most-likely-to':['👀','Let the room decide who fits the story.','Local voting prototype'],'dare-or-drink':['🔥','A little courage. A lot of reactions.','Play now · shared phone'],'love-or-drink':['🌴','Three duos. One unforgettable night.','2v2v2 local prototype']};
+for(const m of modes){const [icon,bio,status]=details[m.slug];const a=el('a',null,'card');a.href=m.path;a.append(el('span',icon,'icon'),el('h3',m.name),el('p',bio,'muted'),el('span',status,'tag'));document.querySelector('#modes').append(a);}

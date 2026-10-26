@@ -1,22 +1,8 @@
-/** Offline question preview. This does NOT implement multiplayer or scoring. */
-export function mountQuestionPreview({ root, title, questions }) {
-  if (!root) return;
-  let index = 0;
-  const wrap = document.createElement('section'); wrap.className = 'play-panel';
-  const status = document.createElement('p'); status.className = 'muted';
-  const prompt = document.createElement('p'); prompt.className = 'prompt'; prompt.setAttribute('aria-live', 'polite');
-  const next = document.createElement('button'); next.type = 'button'; next.textContent = 'Next Question →';
-  const note = document.createElement('p'); note.className = 'muted';
-  note.textContent = 'Offline question preview only. Multiplayer, voting, profiles, and rewards are not connected.';
-  function render() {
-    if (!Array.isArray(questions) || !questions.length) {
-      status.textContent = `${title} · Question bank empty`;
-      prompt.textContent = 'No questions have been added to this mode yet. Edit its questions.js file to add approved prompts.';
-      next.hidden = true; return;
-    }
-    status.textContent = `${title} · Question ${index + 1} of ${questions.length}`;
-    prompt.textContent = questions[index]; next.hidden = questions.length < 2;
-  }
-  next.addEventListener('click', () => { index = (index + 1) % questions.length; render(); });
-  wrap.append(status, prompt, next, note); root.replaceChildren(wrap); render();
-}
+import {el,button,field,shuffled,namesFrom,toast} from '../ui.js';import {recordGame} from '../profiles.js';
+export function mountQuestions({root,slug,title,questions}){const key='ncod2-rounds-'+slug;let game=null,locked=false;const bank=[...new Set(questions)];
+function save(){try{sessionStorage.setItem(key,JSON.stringify(game));}catch{}}function panel(){root.replaceChildren();const p=el('section',null,'panel');root.append(p);return p;}
+function setup(){game=null;save();const p=panel();p.append(el('h2','Make it a good night.'),el('p','One shared phone. Answer, choose a drink, or skip. All choices move to the next prompt. Any drink works.','muted'));const names=field(p,'Names — one per line, up to 12 (optional)','textarea');names.maxLength=600;const count=field(p,'Rounds','select');for(const n of [...new Set([10,20,bank.length].filter(n=>n<=bank.length))]){const o=el('option',String(n));o.value=n;count.append(o);}p.append(button('Start '+title,()=>{game={v:2,players:namesFrom(names.value),deck:shuffled(bank).slice(0,Number(count.value)),index:0,answers:[],done:false};save();render();}));}
+function finish(){if(!game.done){game.done=true;recordGame(game.answers.length);save();}const p=panel();p.append(el('h2','The recap.'),el('p',game.answers.length+' rounds played','tag'));for(const [value,label] of [['honest','No cap'],['drink','Drink'],['skip','Skipped']])p.append(el('p',label+': '+game.answers.filter(a=>a===value).length));p.append(el('p','Local play recorded. Online XP and coins are not active.','muted'),button('Play again',setup));}
+function answer(value){if(locked||game.done)return;locked=true;game.answers.push(value);game.index++;save();render();toast(value==='honest'?'No cap. Respect.':value==='drink'?'Your choice. Your pace.':'Skipped. Keep the vibes.');setTimeout(()=>locked=false,350);}
+function render(){if(game.done||game.index>=game.deck.length){finish();return;}const p=panel();p.append(el('p',`Round ${game.index+1} / ${game.deck.length}`,'tag'));const progress=el('progress');progress.max=game.deck.length;progress.value=game.index;progress.setAttribute('aria-label','Rounds completed');p.append(progress,el('p',game.players.length?game.players[game.index%game.players.length]+'’s turn':'Your turn','muted'));const q=el('h2',game.deck[game.index],'prompt');q.tabIndex=-1;p.append(q);const a=el('div',null,'actions');a.append(button('No cap ✓',()=>answer('honest')),button('Drink 🥤',()=>answer('drink')),button('Skip',()=>answer('skip'),true));p.append(a,button('Finish & recap',finish,true));q.focus();}
+try{const s=JSON.parse(sessionStorage.getItem(key));if(s?.v===2&&Array.isArray(s.deck)&&s.deck.length>0&&s.deck.every(q=>bank.includes(q))&&new Set(s.deck).size===s.deck.length&&Array.isArray(s.players)&&s.players.length<=12&&s.players.every(n=>typeof n==='string')&&Number.isInteger(s.index)&&s.index>=0&&s.index<=s.deck.length&&Array.isArray(s.answers)&&s.answers.length===s.index&&s.answers.every(a=>['honest','drink','skip'].includes(a)))game=s;}catch{}if(game)render();else setup();}

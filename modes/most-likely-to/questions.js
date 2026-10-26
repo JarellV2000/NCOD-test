@@ -1,2 +1,22 @@
-// Add this mode’s approved prompts here.
-export const questions = [];
+export const questions = [
+  "Who is most likely to become a reality TV star?",
+  "Who is most likely to plan a trip and forget to book it?",
+  "Who is most likely to make friends with the whole venue?",
+  "Who is most likely to become a millionaire from a random idea?",
+  "Who is most likely to leave the party early for food?",
+  "Who is most likely to lose their phone while holding it?",
+  "Who is most likely to give the best advice?",
+  "Who is most likely to start a dance battle?",
+  "Who is most likely to show up overdressed?",
+  "Who is most likely to have a secret talent?",
+  "Who is most likely to turn a quick errand into an adventure?",
+  "Who is most likely to remember everyone’s birthday?",
+  "Who is most likely to talk their way out of an awkward situation?",
+  "Who is most likely to accidentally start a trend?",
+  "Who is most likely to order the same meal forever?",
+  "Who is most likely to bring snacks for everybody?",
+  "Who is most likely to win a game they have never played?",
+  "Who is most likely to get recognized by a stranger?",
+  "Who is most likely to organize a reunion?",
+  "Who is most likely to make the group laugh during a serious moment?"
+];
