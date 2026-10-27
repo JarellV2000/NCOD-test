@@ -88,4 +88,6 @@ revoke all on function ncod2_private.snapshot(text),ncod2_private.create_room(te
 grant execute on function ncod2_private.snapshot(text),ncod2_private.create_room(text),ncod2_private.join_room(text,text),ncod2_private.leave_room(text) to authenticated;
 revoke all on function public.ncod2_create_room(text),public.ncod2_join_room(text,text),public.ncod2_room_snapshot(text),public.ncod2_leave_room(text) from public,anon;
 grant execute on function public.ncod2_create_room(text),public.ncod2_join_room(text,text),public.ncod2_room_snapshot(text),public.ncod2_leave_room(text) to authenticated;
+create index if not exists ncod2_members_user_idx on ncod2_private.members(user_id);
+create index if not exists ncod2_rooms_host_idx on ncod2_private.rooms(host_id);
 commit;
