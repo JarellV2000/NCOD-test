@@ -37,3 +37,8 @@ Four new illustrated scenes provide Friends, rooftop/flirty, voting-reaction and
 Validation: regression model suite and local link checks pass. Browser verified reveal and automatic answer progression with a visible reaction banner; manual reaction and motion controls were inspected. Artwork is sample 2D illustration, not the finalized 14 friends. Prompt content and multiplayer limits are unchanged.
 
 Art brief: four adult Black friend/party scenes, premium 2D collectible ink illustration, black/red/orange/cream, Baltimore/Atlanta-inspired outfits; generated with the built-in image tool and converted to WebP.
+
+## V3 moving 2D reaction cast
+An original vector sample cast now appears in four fixed spots. Separate eye, mouth, head, body and arm groups animate idle blinking/breathing, laugh/clap for No Cap, sip for Drink, wave for Skip, looking at card/vote events, gasp at reveals, and dancing/hearts for team choices. The five labeled reaction-preview buttons demonstrate the motions directly. These four samples are not the finalized 14 friend-based characters; the large scene pictures remain static illustrations. Reduced-motion preferences apply to cast movement. Repeated reactions restart and older timeouts cannot interrupt a newer cue.
+
+V3 retains all 13 modes and existing prompt banks. Regression tests and local reference checks pass; browser QA confirmed the SVG cast mounts and choices still advance the game.

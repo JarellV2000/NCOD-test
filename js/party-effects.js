@@ -3,6 +3,7 @@ const settingsKey='ncod-party-settings-v1';
 let preferences={sound:false,motion:true};
 try{const saved=JSON.parse(localStorage.getItem(settingsKey));if(saved&&typeof saved==='object')preferences={sound:saved.sound===true,motion:saved.motion!==false};}catch{}
 let audioContext;
+let castCycle=0;
 const artBase=new URL('../assets/images/',import.meta.url);
 export function artwork(slug='friends'){
  const key=['talking-stage','couples','love-or-drink'].includes(slug)?'flirty':['most-likely-to','confessional','confessionals-pt2','exposed','hot-seat'].includes(slug)?'voting':['after-dark','no-mercy','dare-or-drink'].includes(slug)?'afterdark':'friends';
@@ -14,6 +15,7 @@ function persist(){try{localStorage.setItem(settingsKey,JSON.stringify(preferenc
 function tone(kind){if(!preferences.sound||typeof window==='undefined')return;try{const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return;audioContext??=new Audio();audioContext.resume().catch(()=>{});const t=audioContext.currentTime;const pitches=kind==='drink'?[440,330]:kind==='skip'?[330]:[523,659,784];pitches.forEach((pitch,i)=>{const osc=audioContext.createOscillator(),gain=audioContext.createGain();osc.type='sine';osc.frequency.value=pitch;gain.gain.setValueAtTime(.045,t+i*.08);gain.gain.exponentialRampToValueAtTime(.001,t+i*.08+.15);osc.connect(gain);gain.connect(audioContext.destination);osc.start(t+i*.08);osc.stop(t+i*.08+.16);});}catch{}}
 const choose=items=>items[Math.floor(Math.random()*items.length)];
 export function react(kind,{prompt='',label=''}={}){
+ const cast=document.querySelector('.reaction-cast');if(cast){const cycle=++castCycle;cast.dataset.action='idle';void cast.offsetWidth;cast.dataset.action=kind;setTimeout(()=>{if(cycle===castCycle)cast.dataset.action='idle';},2300);}
  document.querySelector('.party-response')?.remove();document.querySelector('.party-sparks')?.remove();
  const lines={honest:['NO CAP. RESPECT.','THE TRUTH JUST DROPPED.','KEEPING IT REAL.'],drink:['SIP CHOSEN. CHEERS.','TAKE THE SIP.','YOUR PACE. YOUR NIGHT.'],skip:['NEXT CARD. SAME GOOD VIBES.','SKIPPED. KEEP IT MOVING.'],reveal:['CARD FLIPPED. YOUR TURN.'],vote:['VOTE LOCKED. 👀'],results:['THE ROOM HAS SPOKEN.','THE REVEAL IS HERE.'],confession:['SECRET REVEALED. 👀'],team:['THAT’S TEAM CHEMISTRY.'],finish:['THAT’S A NIGHT TO REMEMBER.']};
  let text=label||choose(lines[kind]||['PARTY REACTION']);
