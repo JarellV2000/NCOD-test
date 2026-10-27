@@ -30,3 +30,10 @@ Browser QA confirmed mode popup flip, rules navigation, Friends setup, tap revea
 
 ## Art
 `assets/images/party-deck.webp` is generated 2D sample artwork. Brief: six adult Black friends, Baltimore/Atlanta-inspired streetwear, collectible card ink illustration, playful crowns/doodles, black/red/orange/cream palette. Generated with the built-in image generation tool and converted to WebP for faster loading.
+
+## Alive edition update
+Four new illustrated scenes provide Friends, rooftop/flirty, voting-reaction and After Dark artwork. Mode covers and popup fronts now use the matching scene, with a photo banner on every mode screen. Cards deal into view and question prompts flip in. Answer-triggered portrait bubbles and floating emoji effects run for No Cap, Drink and Skip; No Cap also has explicit prompt-keyword cues for ex/secret questions. No microphone, answer recording or AI inference is used. Reaction buttons are local emoji effects. Voting results include a tied/single winner spotlight; anonymous Confessional totals remain hidden. Confession author reveals and Love or Drink choices trigger their own cues. Optional synthesized sound defaults off; motion can be disabled and honors system reduced-motion preferences.
+
+Validation: regression model suite and local link checks pass. Browser verified reveal and automatic answer progression with a visible reaction banner; manual reaction and motion controls were inspected. Artwork is sample 2D illustration, not the finalized 14 friends. Prompt content and multiplayer limits are unchanged.
+
+Art brief: four adult Black friend/party scenes, premium 2D collectible ink illustration, black/red/orange/cream, Baltimore/Atlanta-inspired outfits; generated with the built-in image tool and converted to WebP.
