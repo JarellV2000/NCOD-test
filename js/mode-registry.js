@@ -26,7 +26,7 @@ export const modes = [
   },
   {
     "slug": "most-likely-to",
-    "name": "Most Likely To",
+    "name": "Who’s Most Likely To",
     "path": "modes/most-likely-to/most-likely-to.html"
   },
   {
@@ -38,5 +38,30 @@ export const modes = [
     "slug": "love-or-drink",
     "name": "Love or Drink",
     "path": "modes/love-or-drink/love-or-drink.html"
+  },
+  {
+    "slug": "after-dark",
+    "name": "21+ After Dark",
+    "path": "modes/after-dark/after-dark.html"
+  },
+  {
+    "slug": "hot-seat",
+    "name": "Hot Seat",
+    "path": "modes/hot-seat/hot-seat.html"
+  },
+  {
+    "slug": "exposed",
+    "name": "Exposed",
+    "path": "modes/exposed/exposed.html"
+  },
+  {
+    "slug": "chaos",
+    "name": "Chaos",
+    "path": "modes/chaos/chaos.html"
+  },
+  {
+    "slug": "no-mercy",
+    "name": "No Mercy",
+    "path": "modes/no-mercy/no-mercy.html"
   }
 ];
