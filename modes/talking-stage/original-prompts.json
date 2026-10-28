@@ -1,0 +1,427 @@
+[
+  {
+    "n": 1,
+    "q": "What’s your go-to comfort food when you’re stressed or just vibing?",
+    "group": "Questions"
+  },
+  {
+    "n": 2,
+    "q": "What’s a random skill you have that most people don’t know about?",
+    "group": "Questions"
+  },
+  {
+    "n": 3,
+    "q": "Are you more of a night owl or early bird?",
+    "group": "Questions"
+  },
+  {
+    "n": 4,
+    "q": "What’s the last show or movie you binged and actually finished?",
+    "group": "Questions"
+  },
+  {
+    "n": 5,
+    "q": "Coffee, tea, or neither?",
+    "group": "Questions"
+  },
+  {
+    "n": 6,
+    "q": "What’s your favorite way to spend a free day with no plans?",
+    "group": "Questions"
+  },
+  {
+    "n": 7,
+    "q": "Do you prefer texts, calls, or FaceTime when you’re talking to someone?",
+    "group": "Questions"
+  },
+  {
+    "n": 8,
+    "q": "What’s something small that always makes your day better?",
+    "group": "Questions"
+  },
+  {
+    "n": 9,
+    "q": "What’s something you’re really passionate about right now?",
+    "group": "Questions"
+  },
+  {
+    "n": 10,
+    "q": "What’s a goal you’re working on (big or small)?",
+    "group": "Questions"
+  },
+  {
+    "n": 11,
+    "q": "Who’s someone that really shaped how you see the world?",
+    "group": "Questions"
+  },
+  {
+    "n": 12,
+    "q": "What’s a childhood memory that still makes you smile?",
+    "group": "Questions"
+  },
+  {
+    "n": 13,
+    "q": "Do you believe in soulmates or more in “right person, right time”?",
+    "group": "Questions"
+  },
+  {
+    "n": 14,
+    "q": "What’s your love language (or what do you think it is)?",
+    "group": "Questions"
+  },
+  {
+    "n": 15,
+    "q": "How do you usually show somebody you care?",
+    "group": "Questions"
+  },
+  {
+    "n": 16,
+    "q": "What’s something you wish more people understood about you?",
+    "group": "Questions"
+  },
+  {
+    "n": 17,
+    "q": "What’s your idea of a perfect first date?",
+    "group": "Questions"
+  },
+  {
+    "n": 18,
+    "q": "Are you the type to plan everything or just go with the flow?",
+    "group": "Questions"
+  },
+  {
+    "n": 19,
+    "q": "What’s a green flag that instantly makes you more interested in someone?",
+    "group": "Questions"
+  },
+  {
+    "n": 20,
+    "q": "What’s a soft red flag that makes you pause?",
+    "group": "Questions"
+  },
+  {
+    "n": 21,
+    "q": "Do you fall for looks first or personality first?",
+    "group": "Questions"
+  },
+  {
+    "n": 22,
+    "q": "What’s the most attractive non-physical trait someone can have?",
+    "group": "Questions"
+  },
+  {
+    "n": 23,
+    "q": "Would you rather someone be really funny or really thoughtful?",
+    "group": "Questions"
+  },
+  {
+    "n": 24,
+    "q": "What’s something that always gets your attention when you’re talking to someone new?",
+    "group": "Questions"
+  },
+  {
+    "n": 25,
+    "q": "What’s something you’ve learned about yourself in the past year?",
+    "group": "Questions"
+  },
+  {
+    "n": 26,
+    "q": "How do you handle conflict or disagreements?",
+    "group": "Questions"
+  },
+  {
+    "n": 27,
+    "q": "What’s a deal-breaker for you in a relationship?",
+    "group": "Questions"
+  },
+  {
+    "n": 28,
+    "q": "Do you see yourself more as a “settle down” type or still figuring it out?",
+    "group": "Questions"
+  },
+  {
+    "n": 29,
+    "q": "What’s one thing you’re still healing from or working on?",
+    "group": "Questions"
+  },
+  {
+    "n": 30,
+    "q": "What does “effort” look like to you from the other person?",
+    "group": "Questions"
+  },
+  {
+    "n": 31,
+    "q": "What’s a song that always puts you in a good mood?",
+    "group": "Questions"
+  },
+  {
+    "n": 32,
+    "q": "If we were hanging out right now, what would we be doing?",
+    "group": "Questions"
+  },
+  {
+    "n": 33,
+    "q": "What’s something you’ve always wanted to try but haven’t yet?",
+    "group": "Questions"
+  },
+  {
+    "n": 34,
+    "q": "Do you believe in love at first sight or more of a slow burn?",
+    "group": "Questions"
+  },
+  {
+    "n": 35,
+    "q": "What’s the best compliment you’ve ever received?",
+    "group": "Questions"
+  },
+  {
+    "n": 36,
+    "q": "What's the first thing that makes you physically attracted to somebody?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 37,
+    "q": "What's your biggest dating red flag?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 38,
+    "q": "What's your biggest dating green flag?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 39,
+    "q": "Do you fall fast or take your time?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 40,
+    "q": "What's something that instantly kills your attraction to somebody?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 41,
+    "q": "What's your biggest weakness when you really like someone?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 42,
+    "q": "Have you ever liked somebody who didn't know you existed?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 43,
+    "q": "What's the longest you've secretly liked somebody?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 44,
+    "q": "Would you rather make the first move or have them make it?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 45,
+    "q": "What's your favorite kind of flirting?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 46,
+    "q": "What's the biggest sign you're catching feelings?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 47,
+    "q": "Have you ever ignored a red flag because somebody was attractive?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 48,
+    "q": "What's the worst excuse somebody has given you for not texting back?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 49,
+    "q": "How long should somebody wait before asking you on a date?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 50,
+    "q": "What's your ideal first date?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 51,
+    "q": "Would you date somebody your friends didn't like?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 52,
+    "q": "What's something that makes somebody instantly boyfriend/girlfriend material?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 53,
+    "q": "What's something that makes somebody instantly NOT relationship material?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 54,
+    "q": "Have you ever been someone's \"almost relationship\"?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 55,
+    "q": "What's the biggest mistake you've made while talking to somebody?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 56,
+    "q": "What's something you wish people understood about you when you're dating?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 57,
+    "q": "Would you rather have crazy chemistry or perfect compatibility?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 58,
+    "q": "What's more important: looks, personality, money, or loyalty?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 59,
+    "q": "How do you act when you're jealous?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 60,
+    "q": "Have you ever pretended not to care when you actually cared a lot?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 61,
+    "q": "What's the fastest you've ever caught feelings?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 62,
+    "q": "What's something you secretly want your crush to do?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 63,
+    "q": "Would you rather receive flowers, a thoughtful gift, or a surprise date?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 64,
+    "q": "What's your biggest relationship fear?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 65,
+    "q": "What's one thing you refuse to compromise on in a relationship?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 66,
+    "q": "What's something you've learned from your last relationship or situationship?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 67,
+    "q": "Would you give somebody a second chance after they broke your trust?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 68,
+    "q": "What's worse: being ghosted or being slowly ignored?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 69,
+    "q": "Have you ever talked to two people at the same time?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 70,
+    "q": "What's your \"I know I shouldn't text them, but…\" person?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 71,
+    "q": "What's the most attractive personality trait?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 72,
+    "q": "What's your biggest \"I'm definitely catching feelings\" giveaway?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 73,
+    "q": "Would you rather know your partner's entire dating history or know nothing?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 74,
+    "q": "What's something you would never tolerate from someone you're dating?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 75,
+    "q": "If your current crush walked through that door right now, what would you do first?",
+    "group": "New / Flirty"
+  },
+  {
+    "n": 76,
+    "q": "Who was the last person you genuinely wanted?",
+    "group": "NO CAP / 2 POINTS"
+  },
+  {
+    "n": 77,
+    "q": "Have you ever flirted with somebody in this room?",
+    "group": "NO CAP / 2 POINTS"
+  },
+  {
+    "n": 78,
+    "q": "What's the biggest lie you've told someone you were talking to?",
+    "group": "NO CAP / 2 POINTS"
+  },
+  {
+    "n": 79,
+    "q": "Have you ever kept somebody around because you liked the attention?",
+    "group": "NO CAP / 2 POINTS"
+  },
+  {
+    "n": 80,
+    "q": "What's something you've done to make your crush jealous?",
+    "group": "NO CAP / 2 POINTS"
+  },
+  {
+    "n": 81,
+    "q": "Have you ever checked somebody's social media because you were suspicious?",
+    "group": "NO CAP / 2 POINTS"
+  },
+  {
+    "n": 82,
+    "q": "Who was your last \"I shouldn't be talking to them\" person?",
+    "group": "NO CAP / 2 POINTS"
+  },
+  {
+    "n": 83,
+    "q": "Would you get back with your ex if nobody found out?",
+    "group": "NO CAP / 2 POINTS"
+  },
+  {
+    "n": 84,
+    "q": "Have you ever caught feelings for somebody who only wanted something casual?",
+    "group": "NO CAP / 2 POINTS"
+  },
+  {
+    "n": 85,
+    "q": "If you had to text one person right now \"I miss you,\" who would it be?",
+    "group": "NO CAP / 2 POINTS"
+  }
+]
