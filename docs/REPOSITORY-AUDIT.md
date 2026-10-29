@@ -1,7 +1,7 @@
 # NCOD-test repository audit — 2026-10-29
 
 ## Confirmed on GitHub main
-- 12 files at audit: `NCOD-2D-GAME-ONLY.html`, `README.md`, `css/theme.css`, `game.html`, `index.html`, `js/animations.js`, `js/game.js`, `js/supabase.js`, `living-room-preview.html`, `lounge.png`, `theme.html` (11? Count actual paths: 11).
+- 11 files at audit: `NCOD-2D-GAME-ONLY.html`, `README.md`, `css/theme.css`, `game.html`, `index.html`, `js/animations.js`, `js/game.js`, `js/supabase.js`, `living-room-preview.html`, `lounge.png`, `theme.html`.
 - `lounge.png` exists in repository root (~2.59 MB) and the preview HTML references that exact path.
 - Current home page is self-contained with sample question arrays, seven mode tiles and 14 generic concept avatars.
 - Earlier `game.html` references external CSS/JS that exist.
