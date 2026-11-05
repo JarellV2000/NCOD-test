@@ -1,0 +1,3 @@
+/* NCOD 2.0 mode bank: most. Independent file for mode-specific updates. */
+window.NCOD_BANKS=window.NCOD_BANKS||{};
+window.NCOD_BANKS.most=["Who's most likely to text their ex?","Who's most likely to go viral for something embarrassing?","Who's most likely to catch feelings first?","Who's most likely to start an argument in the group chat?","Who's most likely to ghost and come back?","Who's most likely to spill a secret?","Who's most likely to fall in love on vacation?","Who's most likely to show up late?","Who's most likely to win a reality show?","Who's most likely to spend their last dollar on an outfit?"];
