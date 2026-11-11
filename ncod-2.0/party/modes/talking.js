@@ -1,3 +1,39 @@
-/* NCOD 2.0 mode bank: talking. Independent file for mode-specific updates. */
+/* NCOD 2.0 talking — expanded original-to-this-build question set. */
 window.NCOD_BANKS=window.NCOD_BANKS||{};
-window.NCOD_BANKS.talking=["What's your biggest green flag?","What's a red flag you ignored?","What makes someone instantly attractive?","What's your ideal first date?","Would you date someone your friends dislike?","Who should text first after a date?","What's something you're afraid to ask someone new?","What's your love language?"];
+window.NCOD_BANKS.talking=[
+  "What's your biggest green flag?",
+  "What's a red flag you ignored?",
+  "What makes someone instantly attractive?",
+  "What's your ideal first date?",
+  "Would you date someone your friends dislike?",
+  "Who should text first after a date?",
+  "What's something you're afraid to ask someone new?",
+  "What's your love language?",
+  "What is a small gesture that wins you over?",
+  "What is your ideal way to spend a Sunday together?",
+  "What is a question you wish people asked on first dates?",
+  "Do you prefer phone calls or texting?",
+  "What makes you feel genuinely listened to?",
+  "What is an instant dealbreaker for you?",
+  "How do you show interest without saying it?",
+  "What is your biggest dating lesson so far?",
+  "Would you rather plan a date or be surprised?",
+  "What is a quality you admire in your parents' relationship?",
+  "What does consistency look like to you?",
+  "What is something people misunderstand about you?",
+  "How soon do you like to define a relationship?",
+  "What is a harmless unpopular dating opinion you have?",
+  "How do you handle an awkward silence?",
+  "What is the best compliment you have received?",
+  "What is your favorite kind of flirting?",
+  "Would you date someone with a totally different schedule?",
+  "What is a boundary you want respected early on?",
+  "What is a hobby you want to share with someone?",
+  "What makes you trust somebody?",
+  "What is the difference between chemistry and compatibility?",
+  "How do you like someone to apologize?",
+  "What is your ideal low-budget date?",
+  "What is something you are working on personally?",
+  "What is a sign someone is emotionally mature?",
+  "Would you rather meet someone's friends or family first?"
+];
