@@ -1,3 +1,39 @@
-/* NCOD 2.0 mode bank: couples. Independent file for mode-specific updates. */
+/* NCOD 2.0 couples — expanded original-to-this-build question set. */
 window.NCOD_BANKS=window.NCOD_BANKS||{};
-window.NCOD_BANKS.couples=["What's your favorite memory together?","Who apologizes first?","What's something you want to do together this year?","Who is more romantic?","What's your funniest inside joke?","What makes you feel appreciated?","Who takes longer to get ready?","What was your first impression of each other?"];
+window.NCOD_BANKS.couples=[
+  "What's your favorite memory together?",
+  "Who apologizes first?",
+  "What's something you want to do together this year?",
+  "Who is more romantic?",
+  "What's your funniest inside joke?",
+  "What makes you feel appreciated?",
+  "Who takes longer to get ready?",
+  "What was your first impression of each other?",
+  "What is one habit of mine you secretly love?",
+  "What is a moment when you felt supported by me?",
+  "What is a date we should recreate?",
+  "How do we handle disagreements best?",
+  "What is a new activity we should try together?",
+  "What is something I do that always makes you smile?",
+  "When do you feel most connected to me?",
+  "What is our funniest shared memory?",
+  "What is one goal we should work toward together?",
+  "What song reminds you of us?",
+  "What is something you want us to communicate better?",
+  "Who is more likely to plan a surprise?",
+  "What does quality time mean to you?",
+  "What is a small tradition we should create?",
+  "What is a challenge we handled well together?",
+  "What is something new you learned about me recently?",
+  "How do you like to be comforted after a bad day?",
+  "What is one way we can make ordinary days special?",
+  "What is your favorite photo of us and why?",
+  "What is a place you want to visit together?",
+  "What is a compliment you don't hear enough?",
+  "How can we support each other's individual goals?",
+  "What is something we both find hilarious?",
+  "What is one thing you appreciate about our teamwork?",
+  "What is a memory you hope we make next year?",
+  "What is your favorite way to reconnect after a busy week?",
+  "What is one promise we can make to each other?"
+];
